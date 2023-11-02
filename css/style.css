@@ -26,6 +26,7 @@ li {
 
 p {
   font-family: "cabin-variable";
+  text-align: ;
 }
 
 
@@ -33,7 +34,7 @@ p {
 .classnav {
   background-color: #fdb9fd;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   display: flex;
 
   /* justify-content: space-between;*/
@@ -80,11 +81,12 @@ p {
 .menu {
   list-style: none;
   padding: 5;
-
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 4rem;
   align-items: center;
+ 
 }
 
 .menu li {
@@ -119,10 +121,13 @@ p {
 footer {
   background: violet;
   color: aliceblue;
+  display: flex;
   font-family: 20px 1rem;
   text-align: center;
   position: absolute;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 /*estilos Presupuestos*/
@@ -162,6 +167,7 @@ footer {
 .footerQuienessomos {
   background-color: violet;
   color: aliceblue;
+  display: flex;
   font-family: 20px 1rem;
   text-align: center;
   clear: both;
@@ -169,13 +175,13 @@ footer {
   width: 100%;
 }
 
-.imgQuienesSomos {
+/*.imgQuienesSomos {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   width: 650px;
   height: 400px;
-}
+}*/
 
 /* imagenes */
 /* Estilo para la información de contacto */
@@ -183,11 +189,14 @@ footer {
   background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
+  align-content: center;
 }
 
 .contact-info h3 {
   font-size: 18px;
   color: #333;
+  align-content: center;
+  
 }
 
 .contact-info p {
@@ -235,12 +244,14 @@ image {
 .mapa {
   display: flex;
   gap: 4rem;
+  padding: 5% 0;
 
 }
 
 .formulario {
   display: flex;
-  gap: 1rem;
+  gap: 4rem;
+  padding: 20% 0;
 }
 
 .carousel-custom {
@@ -284,3 +295,55 @@ image {
 
   text-align: center;
 }
+
+.hero {
+  background-image: url(../Image/pagina.jpg);
+  background-size: cover ;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+
+}
+
+.hero__texto {
+  line-height: 1;
+  font-size: 16px;
+  text-align: left;
+}
+ .col-md-4 {
+  max-width: 500px;
+  margin: 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ }
+
+ .icon {
+  background-color: #fdb9fd;
+  width:  3rem ;
+  height: 3rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+  
+  
+ }
+
+ .iconitos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-block: 1rem;
+  justify-content: center;
+
+ }
+
+ 
