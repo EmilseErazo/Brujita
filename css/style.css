@@ -346,4 +346,12 @@ image {
 
  }
 
- 
+ @media screen and (max-width: 480px) {
+  .menu {
+    display:block; 
+    gap: 1rem;
+    flex-direction: column 1fr;
+    flex-direction: row repeat(6, 1fr);
+  }
+}
+
