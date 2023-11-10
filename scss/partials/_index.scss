@@ -1,0 +1,83 @@
+.contenedor {
+    border: 2px solid $colorPrincipal;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-template-areas:
+      "logo   logo    quienes         productos"
+      "logo   logo    presupuestos    contactanos";
+
+  
+  .hijo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border: 3px solid #ddd;
+    text-align: center;
+    padding: 1rem;
+
+ & img {
+      width: 100%;
+      display: flex;
+      margin: auto;
+      border-radius: 50%;
+      
+        }
+  }
+  
+
+  .logo {
+    display: flex;
+    width: 100%;
+    background-color: $colorSecundario;
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+
+.quienes {
+    display: flex;
+    background-color: antiquewhite;
+    grid-area: quienes;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .productos {
+    background-color: rgb(196, 150, 239);
+    grid-area: productos;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .presupuestos {
+    background-color: rgb(196, 138, 251);
+    grid-area: presupuestos;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .contactanos {
+    background-color: rgb(159, 112, 203);
+    grid-area: contactanos;
+    align-items: center;
+    justify-content: center;
+  }
+}
+  

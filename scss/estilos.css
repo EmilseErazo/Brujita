@@ -1,0 +1,345 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "patrickHand-Regular.ttf";
+  src: url(../Tipografia/PatrickHand-Regular.ttf);
+}
+@font-face {
+  font-family: "Cabin-italic";
+  src: url(../Tipografia/Cabin-Italic-VariableFont_wdth\,wght.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "cabin-variable";
+  src: url(../Tipografia/Cabin-VariableFont_wdth\,wght.ttf);
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+li {
+  font-family: "patrickHand-Regular.ttf";
+  color: blueviolet;
+}
+
+p {
+  font-family: "cabin-variable";
+  text-align: center;
+}
+
+.classnav {
+  background-color: violet;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contenedor {
+  border: 2px solid violet;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  grid-template-areas: "logo   logo    quienes         productos" "logo   logo    presupuestos    contactanos";
+}
+.contenedor .hijo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  border: 3px solid #ddd;
+  text-align: center;
+  padding: 1rem;
+}
+.contenedor .hijo img {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+}
+.contenedor .logo {
+  display: flex;
+  width: 100%;
+  background-color: blueviolet;
+  grid-area: logo;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.contenedor .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenedor .quienes {
+  display: flex;
+  background-color: antiquewhite;
+  grid-area: quienes;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor .productos {
+  background-color: rgb(196, 150, 239);
+  grid-area: productos;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor .presupuestos {
+  background-color: rgb(196, 138, 251);
+  grid-area: presupuestos;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor .contactanos {
+  background-color: rgb(159, 112, 203);
+  grid-area: contactanos;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+.menu li li:last-child {
+  margin-right: 0;
+}
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ddd;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.menu li a:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.logo {
+  background-color: blueviolet;
+  height: 6rem;
+}
+
+.classnav {
+  background-color: #fdb9fd;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+}
+.classnav .menu {
+  list-style: none;
+  padding: 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero {
+  background: violet;
+  background-image: url(../Image/pagina.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.hero .hero__texto {
+  line-height: 1;
+  font-size: 16px;
+  text-align: left;
+}
+.hero .col-md-4 {
+  max-width: 500px;
+  margin: 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerQuienessomos {
+  background-color: violet;
+  color: aliceblue;
+  display: flex;
+  font-family: 20px 1rem;
+  text-align: center;
+  clear: both;
+  position: absolute;
+  width: 100%;
+}
+
+.navproductos {
+  padding: 10px 0;
+}
+.navproductos .menuproductos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.navproductos .imagenstich {
+  width: 700px;
+  height: 450px;
+}
+.navproductos .imagenencanto {
+  width: 700px;
+  height: 450px;
+}
+
+.imagen-carrusel {
+  max-width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  align-content: space-between;
+}
+.imagen-carrusel .carousel-item {
+  text-align: center;
+  width: 500px;
+  height: 500px;
+}
+.imagen-carrusel .carousel-custom {
+  display: flex;
+  gap: 2rem;
+  max-height: 100%;
+  justify-content: center;
+  justify-items: center;
+  color: #070707;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 50%;
+}
+
+.menupresupuestos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 3rem;
+}
+
+.contact-info {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  align-content: center;
+}
+.contact-info .contact-info h3 {
+  font-size: 18px;
+  color: #333;
+  align-content: center;
+}
+.contact-info .contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+.contact-info .contact-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-info .contact-info a:hover {
+  text-decoration: underline;
+}
+
+.iconitos {
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  text-align: center;
+  /*padding-block: 1rem;*/
+  padding: 3rem;
+  justify-content: center;
+}
+
+.icon {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar los íconos */
+}
+
+.carousel-item {
+  width: 500px;
+  height: 500px;
+}
+
+image {
+  max-width: 100%;
+  height: auto;
+}
+
+.mapa {
+  display: flex;
+  gap: 4rem;
+  padding: 5% 0;
+}
+
+.formulario {
+  display: flex;
+  gap: 4rem;
+  padding: 20% 0;
+}
+
+.btn {
+  justify-content: center;
+  border: #fdb9fd;
+  border-radius: 15%;
+  background-color: #fdb9fd;
+  color: #430243;
+  width: 6rem;
+  height: 4rem;
+}
+
+footer {
+  background: violet;
+  color: aliceblue;
+  display: flex;
+  font-family: 20px 1rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    display: block;
+    gap: 1rem;
+    flex-direction: column 1fr;
+    flex-direction: row repeat(6, 1fr);
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(6, 1fr);
+    grid-template-areas: "logo" "logo" "logo" "logo" "quienes" "productos" "presupuestos" "contactanos";
+  }
+}/*# sourceMappingURL=estilos.css.map */

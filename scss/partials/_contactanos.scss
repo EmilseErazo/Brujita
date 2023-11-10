@@ -1,0 +1,39 @@
+
+  
+.carousel-item {
+    width: 500px;
+    height: 500px;
+  
+  }
+  
+  image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .mapa {
+    display: flex;
+    gap: 4rem;
+    padding: 5% 0;
+  
+  }
+  
+  .formulario {
+    display: flex;
+    gap: 4rem;
+    padding: 20% 0;
+  }
+  
+
+  
+  .btn {
+  
+    justify-content: center;
+    border: #fdb9fd;
+    border-radius: 15%;
+    background-color: #fdb9fd;
+    color: #430243;
+    width: 6rem;
+    height: 4rem;
+  
+  }
