@@ -37,6 +37,7 @@ p {
   text-align: center;
   padding: 20px 0;
   display: flex;
+  background-image: linear-gradient(to top, violet, blueviolet);
 }
 
 .contenedor {
@@ -46,6 +47,11 @@ p {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 1fr 1fr;
   grid-template-areas: "logo   logo    quienes         productos" "logo   logo    presupuestos    contactanos";
+  animation-name: agrandarse;
+  animation-duration: 5s;
+  width: 100%;
+  animation-iteration-count: infinite;
+  background-color: blueviolet;
 }
 .contenedor .hijo {
   display: flex;
@@ -72,6 +78,7 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-image: linear-gradient(to top, violet, blueviolet);
 }
 .contenedor .logo img {
   width: 100%;
@@ -105,6 +112,14 @@ p {
   justify-content: center;
 }
 
+@keyframes agrandarse {
+  0% {
+    width: 300px;
+  }
+  50% {
+    width: 100%;
+  }
+}
 .menu li {
   margin-right: 20px;
 }
@@ -187,23 +202,34 @@ p {
   width: 100%;
 }
 
-.navproductos {
-  padding: 10px 0;
+.main {
+  padding: 2rem;
 }
-.navproductos .menuproductos {
-  list-style: none;
-  padding: 0;
+.main .img {
+  max-width: 100%;
+}
+
+.navproductos {
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.navproductos .cartita {
+  flex: 1;
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  padding: 1.4rem;
+  transition: 4s;
 }
-.navproductos .imagenstich {
-  width: 700px;
-  height: 450px;
+.navproductos:hover {
+  transform: rotateY(180deg);
 }
-.navproductos .imagenencanto {
-  width: 700px;
-  height: 450px;
+.navproductos:hover {
+  transform: rotateY(180deg);
 }
 
 .imagen-carrusel {

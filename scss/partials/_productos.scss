@@ -1,25 +1,41 @@
-.navproductos {
-  
-    padding: 10px 0;
-
-    .menuproductos {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-      }
-      
-      .imagenstich {
-        width: 700px;
-        height: 450px;
-      }
-      
-      .imagenencanto {
-        width: 700px;
-        height: 450px;
-      }
+.main {
+  padding: 2rem;
+  .img {
+    max-width: 100%;
   }
-  
+}
+.navproductos {
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 2rem;
+  gap: 1rem;
+ justify-content: center;
+ align-items: center;
 
-  
+
+  .cartita {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.4rem;
+    transition: 4s;
+
+  }
+  &:hover {
+    transform:rotateY(180deg);
+
+    
+
+  }
+
+  &:hover {
+        transform:rotateY(180deg);
+    
+  }
+
+}
+
+
+

@@ -8,6 +8,11 @@
       "logo   logo    quienes         productos"
       "logo   logo    presupuestos    contactanos";
 
+    animation-name: agrandarse;  
+    animation-duration: 5s;
+    width: 100%;
+    animation-iteration-count: infinite;
+    background-color: $colorSecundario;
   
   .hijo {
 
@@ -18,6 +23,7 @@
     border: 3px solid #ddd;
     text-align: center;
     padding: 1rem;
+ 
 
  & img {
       width: 100%;
@@ -39,6 +45,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-image: linear-gradient(to top, $colorPrincipal, $colorSecundario);
   
   }
   
@@ -56,6 +63,7 @@
     grid-area: quienes;
     align-items: center;
     justify-content: center;
+      
   }
   
   .productos {
@@ -79,5 +87,18 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+@keyframes agrandarse {
+
+ 0% {
+ 
+    width: 300px;
+  }
+  50% {
+    width: 100%;
+  }
+
+
 }
   
