@@ -29,6 +29,28 @@
       "contactanos"; 
       }
 
+      .navproductos {
+        overflow: hidden;
+      grid-template-columns: 2fr;
+      grid-auto-rows: 1fr ;
+      grid-template-areas:
+       "cartita1"
+       "cartita2"; 
+        }
+
+        .row {
+        overflow: hidden;
+        grid-template-columns: 2fr;
+        grid-auto-rows: 1fr ;
+        grid-template-areas:
+         "icon1"
+         "icon2"
+         "icon3"
+         "icon4"
+         "icon5"; 
+          }
+  
+
 
     
     }

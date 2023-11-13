@@ -211,31 +211,6 @@ p {
   height: 6rem;
 }
 
-/*.classnav {
-    background-color: #fdb9fd;
-    text-align: center;
-    padding: 20px 0;
-    display: grid;
-    align-items:baseline;
-    grid-template-columns: 6fr;
-    grid-auto-rows: 1fr ;
-    grid-template-areas:
-      "inicio  quienes  productos  presupuestos contactanos"; 
-
-
-
-    .menu {
-        list-style: none;
-        padding: 5;
-        width: 100%;
-        justify-content: center;
-        gap: 4rem;
-        align-items: center;
-        display: flex;
-
-      }
-
-    }*/
 .hero {
   background: violet;
   background-image: url(../Image/pagina.jpg);
@@ -290,12 +265,15 @@ p {
 }
 
 .navproductos {
-  display: flex;
+  display: grid;
   padding: 10px 0;
   margin-bottom: 2rem;
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  grid-template-columns: 2fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas: "cartita1 cartita2";
 }
 .navproductos .cartita {
   flex: 1;
@@ -336,6 +314,11 @@ p {
   max-width: 50%;
 }
 
+image {
+  max-width: 100%;
+  height: auto;
+}
+
 /* .menupresupuestos {
    list-style: none;
    padding: 0;
@@ -346,13 +329,16 @@ p {
 
  }*/
 .row {
-  display: flex;
+  display: grid;
   flex-direction: row;
   align-items: center;
   padding: 3rem;
   gap: 3rem;
   margin-left: 15px;
   overflow: visible;
+  grid-template-columns: 5fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas: "icon1 icon2 icon3 icon4 incon5";
 }
 
 .iconitos {
@@ -365,7 +351,47 @@ p {
   padding: 3rem;
   justify-content: center;
 }
-.iconitos .icon {
+.iconitos .icon1 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar los íconos */
+}
+.iconitos .icon2 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar los íconos */
+}
+.iconitos .icon3 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar los íconos */
+}
+.iconitos .icon4 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar los íconos */
+}
+.iconitos .icon5 {
   background-color: #fdb9fd;
   width: 3rem;
   height: 3rem;
@@ -407,29 +433,20 @@ p {
   }
 
 }*/
-.carousel-item {
-  width: 500px;
-  height: 500px;
-}
-
-image {
-  max-width: 100%;
-  height: auto;
-}
-
 .mapa {
+  align-items: center;
   display: flex;
   gap: 4rem;
   padding: 5% 0;
 }
 
 .formulario {
+  align-items: center;
   display: flex;
   gap: 4rem;
   padding: 20% 0;
 }
-
-.btn {
+.formulario .btn {
   justify-content: center;
   border: #fdb9fd;
   border-radius: 15%;
@@ -462,5 +479,17 @@ footer {
     grid-template-columns: 6fr;
     grid-auto-rows: 1fr;
     grid-template-areas: "inicio" "quienes" "productos" "presupuestos" "como" "contactanos";
+  }
+  .navproductos {
+    overflow: hidden;
+    grid-template-columns: 2fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas: "cartita1" "cartita2";
+  }
+  .row {
+    overflow: hidden;
+    grid-template-columns: 2fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas: "icon1" "icon2" "icon3" "icon4" "icon5";
   }
 }/*# sourceMappingURL=estilos.css.map */

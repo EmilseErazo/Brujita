@@ -5,12 +5,16 @@
   }
 }
 .navproductos {
-  display: flex;
+  display: grid;
   padding: 10px 0;
   margin-bottom: 2rem;
   gap: 1rem;
  justify-content: center;
  align-items: center;
+ grid-template-columns: 2fr;
+ grid-auto-rows: 1fr ;
+ grid-template-areas:
+ "cartita1 cartita2";
 
 
   .cartita {

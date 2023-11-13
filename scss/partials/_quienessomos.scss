@@ -1,28 +1,3 @@
-/*.classnav {
-    background-color: #fdb9fd;
-    text-align: center;
-    padding: 20px 0;
-    display: grid;
-    align-items:baseline;
-    grid-template-columns: 6fr;
-    grid-auto-rows: 1fr ;
-    grid-template-areas:
-      "inicio  quienes  productos  presupuestos contactanos"; 
-     
- 
-
-    .menu {
-        list-style: none;
-        padding: 5;
-        width: 100%;
-        justify-content: center;
-        gap: 4rem;
-        align-items: center;
-        display: flex;
-      
-      }
-
-    }*/
 
   .hero {
     background: $colorPrincipal;
