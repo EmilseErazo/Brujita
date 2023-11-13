@@ -1,9 +1,68 @@
 .classnav {
-    background-color: $colorPrincipal;
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    background-image: linear-gradient(to top, $colorPrincipal, $colorSecundario);
-    }
+  background-color: $colorPrincipal;
+  text-align: center;
+  align-content: center;
+  padding: 20px 0;
+  display: flexbox;
+  background-image: linear-gradient(to top, $colorPrincipal, $colorSecundario);
 
-  
+
+}
+
+.menu {
+  text-align: center;
+  list-style: none;
+  padding: 3;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas:
+
+    "inicio quienes productos presupuestos como contactanos";
+}
+
+.hijo {
+  display: flex;
+  align-items: center;
+padding: auto;
+}
+
+.inicio {
+  display: flex;
+  grid-area: inicio;
+  padding: 3;
+}
+
+.quienes {
+  display: flex;
+  grid-area: quienes;
+  padding: 3;
+}
+
+.productos {
+  display: flex;
+  grid-area: productos;
+  padding: 3;
+}
+
+.presupuestos {
+  display: flex;
+  grid-area: presupuestos;
+  padding: 3;
+}
+
+.como {
+  display: flex;
+  grid-area: como;
+  padding: 3;
+}
+
+.contactanos {
+  display: flex;
+  grid-area: contactanos;
+  padding: 3;
+}
