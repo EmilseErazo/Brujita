@@ -1,62 +1,63 @@
+@media screen and (max-width: 480px) {
 
-  @media screen and (max-width: 480px) {
-  
-    .contenedor {
-      grid-template-columns: 1fr;
-      grid-auto-rows: repeat(6, 1fr);
-      grid-template-areas:
-        "logo"
-        "logo"
-        "logo"
-        "logo"
-        "quienes"
-        "productos"
-        "presupuestos"
-        "contactanos";
-  
-    }
-
-    .menu {
-      overflow: hidden;
-    grid-template-columns: 6fr;
-    grid-auto-rows: 1fr ;
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(6, 1fr);
     grid-template-areas:
-      "inicio"  
+      "logo"
+      "logo"
+      "logo"
+      "logo"
+      "quienes"
+      "productos"
+      "presupuestos"
+      "contactanos";
+
+  }
+
+  .menu {
+    overflow: hidden;
+    grid-template-columns: 6fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "inicio"
       "quienes"
       "productos"
       "presupuestos"
       "como"
-      "contactanos"; 
-      }
+      "contactanos";
+  }
 
-      .navproductos {
-        overflow: hidden;
-      grid-template-columns: 2fr;
-      grid-auto-rows: 1fr ;
-      grid-template-areas:
-       "cartita1"
-       "cartita2"; 
-        }
+  .navproductos {
+    overflow: hidden;
+    grid-template-columns: 2fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "cartita1"
+      "cartita2";
+  }
 
-        .row {
-        overflow: hidden;
-        grid-template-columns: 2fr;
-        grid-auto-rows: 1fr ;
-        grid-template-areas:
-         "icon1"
-         "icon2"
-         "icon3"
-         "icon4"
-         "icon5"; 
-          }
-  
+  .row {
+    overflow: hidden;
+    grid-template-columns: 2fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "icon1"
+      "icon2"
+      "icon3"
+      "icon4"
+      "icon5";
+  }
 
-
+  .rowmapa {
     
-    }
-    
-  
+    grid-template-columns: 2fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "mapa"
+      "formulario";
+  }
 
 
 
-  
+}

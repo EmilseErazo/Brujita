@@ -1,41 +1,51 @@
+
+
 .imagen-carrusel {
-    max-width: 50%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     text-align: center;
     align-content: space-between;
+
     .carousel-item {
-          text-align: center;
-        width: 500px;
-        height: 500px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
       }
       .carousel-custom {
         display: flex;
-        gap: 2rem;
+        gap: 7rem;
         max-height: 100%;
         justify-content: center;
         justify-items: center;
         color: #070707;
         margin: 0 auto;
         text-align: center;
-        max-width: 50%;
+        max-width: 25%;
       
       
       }
   }
 
 
-  image {
-    max-width: 100%;
-    height: auto;
-  }
   
- /* .menupresupuestos {
+ .menupresupuestos {
+    width: 100%;
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 3rem;
+    gap: 8rem;
+    padding: 2;
 
-  }*/
+  }
+  
+.imagen {
+    max-width: 100%;
+    height: auto;
+    width: 25%;
+  }
