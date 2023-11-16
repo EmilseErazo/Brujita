@@ -265,23 +265,24 @@ p {
 
 
   }*/
-.productos {
+.carrito {
   display: grid;
   grid-template-columns: 1fr, 1fr;
   grid-auto-rows: 1fr;
   grid-template-areas: "tarjeta1" "tarjeta2" "tarjeta3";
 }
-.productos .navproductos {
+.carrito .navproductos {
   background: rgb(251, 182, 251);
   text-align: center;
-  /*text-size-adjust: 18px;*/
+  -webkit-text-size-adjust: 18px;
+     -moz-text-size-adjust: 18px;
+          text-size-adjust: 18px;
+  padding: 0%;
   justify-content: center;
   align-content: center;
   align-items: center;
-  gap: 1;
-  padding: 10px, 0;
 }
-.productos .navproductos .tarjetas1 {
+.carrito .navproductos .tarjetas1 {
   background: violet;
   margin-top: auto;
   display: flex;
@@ -292,7 +293,7 @@ p {
   flex-direction: row;
   padding: 1rem;
 }
-.productos .navproductos .tarjetas2 {
+.carrito .navproductos .tarjetas2 {
   background: blueviolet;
   display: flex;
   grid-area: tarjeta2;
@@ -302,7 +303,7 @@ p {
   flex-direction: row;
   padding: 1rem;
 }
-.productos .navproductos .tarjetas3 {
+.carrito .navproductos .tarjetas3 {
   background: violet;
   display: flex;
   grid-area: tarjeta3;
@@ -311,7 +312,7 @@ p {
   align-items: center;
   padding: 1rem;
 }
-.productos .navproductos .tarjetas3 .comentario {
+.carrito .navproductos .tarjetas3 .comentario {
   display: flex;
 }
 
@@ -433,39 +434,18 @@ p {
   margin: 0 auto; /* Centrar los íconos */
 }
 
-/*.contact-info {
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
-  align-content: center;
-
-
-  .contact-info h3 {
-    font-size: 18px;
-    color: #333;
-    align-content: center;
-
-  }
-
-  .contact-info p {
-    font-size: 16px;
-    color: #555;
-    margin: 5px 0;
-  }
-
-  .contact-info a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-
-}*/
-.rowmapa {
+.ubicacion {
+  background: rgb(247, 208, 247);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ubicacion .rowmapa {
   width: 100%;
+  flex-wrap: wrap;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
@@ -474,8 +454,8 @@ p {
   justify-content: center;
   align-items: center;
 }
-.rowmapa .mapa,
-.rowmapa .formulario {
+.ubicacion .rowmapa .mapa,
+.ubicacion .rowmapa .formulario {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -486,7 +466,7 @@ p {
   grid-area: mapa;
   grid-area: formulario;
 }
-.rowmapa .btn {
+.ubicacion .rowmapa .btn {
   justify-content: center;
   border: #fdb9fd;
   border-radius: 15%;
@@ -496,6 +476,90 @@ p {
   height: 4rem;
   padding: 1rem;
   margin-left: 15px;
+}
+.ubicacion .row {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  gap: 3rem;
+  margin-left: 15px;
+  overflow: visible;
+}
+.ubicacion .iconitos {
+  background: #fbd7fb;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: 5fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas: "icon1 icon2 icon3 icon4 incon5";
+}
+.ubicacion .iconitos .icon1 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  grid-area: icon1;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar los íconos */
+}
+.ubicacion .iconitos .icon2 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  grid-area: icon2;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar los íconos */
+}
+.ubicacion .iconitos .icon3 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  grid-area: icon3;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar los íconos */
+}
+.ubicacion .iconitos .icon4 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  grid-area: icon4;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.ubicacion .iconitos .icon5 {
+  background-color: #fdb9fd;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  grid-area: icon5;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.ubicacion .foto {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -511,6 +575,9 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .body {
+    margin-top: 4rem;
+  }
   .contenedor {
     grid-template-columns: 1fr;
     grid-auto-rows: repeat(6, 1fr);
@@ -522,20 +589,21 @@ footer {
     grid-auto-rows: 1fr;
     grid-template-areas: "inicio" "quienes" "productos" "presupuestos" "como" "contactanos";
   }
-  .productos {
+  .carrito {
+    height: initial;
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-template-areas: "tarjeta1" "tarjeta2" "tarjeta3";
   }
-  .row {
+  .rowmapa {
     overflow: hidden;
     grid-template-columns: 2fr;
     grid-auto-rows: 1fr;
-    grid-template-areas: "icon1" "icon2" "icon3" "icon4" "icon5";
-  }
-  .rowmapa {
-    grid-template-columns: 2fr;
-    grid-auto-rows: 1fr;
     grid-template-areas: "mapa" "formulario";
+  }
+  .iconitos {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: repeat(5, 1fr);
+    grid-template-areas: "icon1" "icon2" "icon3" "icon4" "icon5";
   }
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,38 +1,150 @@
-.rowmapa {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-areas:
-    "mapa formulario";
-  gap: 3rem;
-  justify-content: center;
+.ubicacion {
+  background: rgb(247, 208, 247);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
 
-  .mapa,
-  .formulario {
+  .rowmapa {
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "mapa formulario";
+    gap: 3rem;
     justify-content: center;
     align-items: center;
-     gap: 5rem;
-    padding: 10% 0;
-    grid-area: mapa;
-    grid-area: formulario;
-
-  }
-
-  .btn {
-    justify-content: center;
-    border: #fdb9fd;
-    border-radius: 15%;
-    background-color: #fdb9fd;
-    color: #430243;
-    width: 6rem;
-    height: 4rem;
-    padding: 1rem;
-    margin-left: 15px;
   
+    .mapa,
+    .formulario {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+       gap: 5rem;
+      padding: 10% 0;
+      grid-area: mapa;
+      grid-area: formulario;
+  
+    }
+  
+    .btn {
+      justify-content: center;
+      border: #fdb9fd;
+      border-radius: 15%;
+      background-color: #fdb9fd;
+      color: #430243;
+      width: 6rem;
+      height: 4rem;
+      padding: 1rem;
+      margin-left: 15px;
+    
+    }
   }
+  .row{
+    display: flex;
+    align-items:center;
+    padding: 3rem;
+    gap: 3rem;
+    margin-left: 15px;
+    overflow:visible;
+   
+  }
+
+  .iconitos{
+
+    background: #fbd7fb;
+     display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    white-space: nowrap;
+     
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-auto-rows: 1fr ;
+    grid-template-areas:
+    "icon1 icon2 icon3 icon4 incon5";
+
+    
+    .icon1 {
+      background-color: #fdb9fd;
+      width:  3rem ;
+      height: 3rem;
+     display: flex;
+     grid-area: icon1;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     border-radius: 50%;
+     margin: 0 auto; /* Centrar los íconos */
+      
+     }
+     .icon2 {
+      background-color: #fdb9fd;
+      width:  3rem ;
+      height: 3rem;
+     display: flex;
+     grid-area: icon2;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     margin: 0 auto; /* Centrar los íconos */
+      
+     }
+     .icon3 {
+      background-color: #fdb9fd;
+      width:  3rem ;
+      height: 3rem;
+     display: flex;
+     grid-area: icon3;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     margin: 0 auto; /* Centrar los íconos */
+      
+     }
+     .icon4 {
+      background-color: #fdb9fd;
+      width:  3rem ;
+      height: 3rem;
+     display: flex;
+     grid-area: icon4;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     margin: 0 auto;
+      
+     }
+     .icon5 {
+      background-color: #fdb9fd;
+      width:  3rem ;
+      height: 3rem;
+     display: flex;
+     grid-area: icon5;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     border-radius: 50%;
+     margin: 0 auto; 
+      
+     }
+   }
+   
+  .foto {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+
 }
