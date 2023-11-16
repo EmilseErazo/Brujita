@@ -2,8 +2,9 @@
   background-color: $colorPrincipal;
   text-align: center;
   align-content: center;
+  gap: 1;
   padding: 20px 0;
-  display: flexbox;
+  display: flex;
   background-image: linear-gradient(to top, $colorPrincipal, $colorSecundario);
 
 
@@ -12,10 +13,10 @@
 .menu {
   text-align: center;
   list-style: none;
-  padding: 3;
+  padding: 1rem;
   width: 100%;
   justify-content: center;
-  gap: 2rem;
+  gap: 1;
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -34,35 +35,35 @@
 .inicio {
   display: flex;
   grid-area: inicio;
-  padding: 3;
+  padding: 1;
 }
 
 .quienes {
   display: flex;
   grid-area: quienes;
-  padding: 3;
+  padding: 2;
 }
 
 .productos {
   display: flex;
   grid-area: productos;
-  padding: 3;
+  padding: 2;
 }
 
 .presupuestos {
   display: flex;
   grid-area: presupuestos;
-  padding: 3;
+  padding: 2;
 }
 
 .como {
   display: flex;
   grid-area: como;
-  padding: 3;
+  padding: 2;
 }
 
 .contactanos {
   display: flex;
   grid-area: contactanos;
-  padding: 3;
+  padding: 2;
 }

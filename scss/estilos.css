@@ -36,18 +36,19 @@ p {
   background-color: violet;
   text-align: center;
   align-content: center;
+  gap: 1;
   padding: 20px 0;
-  display: flexbox;
+  display: flex;
   background-image: linear-gradient(to top, violet, blueviolet);
 }
 
 .menu {
   text-align: center;
   list-style: none;
-  padding: 3;
+  padding: 1rem;
   width: 100%;
   justify-content: center;
-  gap: 2rem;
+  gap: 1;
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -64,37 +65,37 @@ p {
 .inicio {
   display: flex;
   grid-area: inicio;
-  padding: 3;
+  padding: 1;
 }
 
 .quienes {
   display: flex;
   grid-area: quienes;
-  padding: 3;
+  padding: 2;
 }
 
 .productos {
   display: flex;
   grid-area: productos;
-  padding: 3;
+  padding: 2;
 }
 
 .presupuestos {
   display: flex;
   grid-area: presupuestos;
-  padding: 3;
+  padding: 2;
 }
 
 .como {
   display: flex;
   grid-area: como;
-  padding: 3;
+  padding: 2;
 }
 
 .contactanos {
   display: flex;
   grid-area: contactanos;
-  padding: 3;
+  padding: 2;
 }
 
 .contenedor {
@@ -108,7 +109,7 @@ p {
   animation-name: agrandarse;
   animation-duration: 5s;
   width: 100%;
-  animation-iteration-count: infinite;
+  /*animation-iteration-count: infinite;*/
   background-color: blueviolet;
 }
 .contenedor .hijo {
@@ -264,37 +265,54 @@ p {
 
 
   }*/
-.main {
-  padding: 2rem;
-}
-.main .img {
-  max-width: 100%;
-}
-
-.navproductos {
+.productos {
   display: grid;
-  padding: 10px 0;
-  margin-bottom: 2rem;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 2fr;
+  grid-template-columns: 1fr, 1fr;
   grid-auto-rows: 1fr;
-  grid-template-areas: "cartita1 cartita2";
+  grid-template-areas: "tarjeta1" "tarjeta2" "tarjeta3";
 }
-.navproductos .cartita {
-  flex: 1;
-  display: flex;
+.productos .navproductos {
+  background: rgb(251, 182, 251);
+  text-align: center;
+  /*text-size-adjust: 18px;*/
   justify-content: center;
+  align-content: center;
   align-items: center;
-  padding: 1.4rem;
-  transition: 4s;
+  gap: 1;
+  padding: 10px, 0;
 }
-.navproductos:hover {
-  transform: rotateY(180deg);
+.productos .navproductos .tarjetas1 {
+  background: violet;
+  margin-top: auto;
+  display: flex;
+  grid-area: tarjeta1;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
 }
-.navproductos:hover {
-  transform: rotateY(180deg);
+.productos .navproductos .tarjetas2 {
+  background: blueviolet;
+  display: flex;
+  grid-area: tarjeta2;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+}
+.productos .navproductos .tarjetas3 {
+  background: violet;
+  display: flex;
+  grid-area: tarjeta3;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.productos .navproductos .tarjetas3 .comentario {
+  display: flex;
 }
 
 .imagen-carrusel {
@@ -504,11 +522,10 @@ footer {
     grid-auto-rows: 1fr;
     grid-template-areas: "inicio" "quienes" "productos" "presupuestos" "como" "contactanos";
   }
-  .navproductos {
-    overflow: hidden;
-    grid-template-columns: 2fr;
+  .productos {
+    grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
-    grid-template-areas: "cartita1" "cartita2";
+    grid-template-areas: "tarjeta1" "tarjeta2" "tarjeta3";
   }
   .row {
     overflow: hidden;
