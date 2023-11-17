@@ -5,20 +5,15 @@
   display: flex;
   padding: 5rem;
   gap: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row: 1fr;
-  grid-template-areas: 
-  "hero imagequienes";
+  
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
-
-  .hero {
+  .col-md-6 {
+    justify-content: center;
+       
     display: flex;
-    grid-area: hero;
   }
-
-  .imagequienes {
-    display: flex;
-    grid-area: imagequienes;
   }
-}
