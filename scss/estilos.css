@@ -109,7 +109,6 @@ p {
   animation-name: agrandarse;
   animation-duration: 5s;
   width: 100%;
-  /*animation-iteration-count: infinite;*/
   background-color: blueviolet;
 }
 .contenedor .hijo {
@@ -185,6 +184,7 @@ p {
 }
 .menu li {
   margin-right: 20px;
+  display: flex;
 }
 .menu li li:last-child {
   margin-right: 0;
@@ -202,9 +202,9 @@ p {
   background-color: #666;
   color: #fff;
 }
-
-p {
+.menu li p {
   margin: 20px 0;
+  justify-content: center;
 }
 
 .logo {
@@ -229,212 +229,244 @@ p {
   display: flex;
 }
 
-.carrito {
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-areas: "tarjeta1" "tarjeta2" "tarjeta3";
-}
-.carrito .navproductos {
+body {
   background: rgb(251, 182, 251);
+  background: linear-gradient(90deg, rgb(251, 182, 251) 0%, rgb(255, 255, 255) 50%, rgb(251, 182, 251) 100%);
+}
+
+.navproductos {
+  background-color: violet;
+  max-width: 1600;
+}
+.navproductos h2 {
+  color: #333;
+  background: rgb(251, 182, 251);
+  background: linear-gradient(90deg, rgb(251, 182, 251) 0%, rgb(255, 255, 255) 50%, rgb(251, 182, 251) 100%);
+  padding: 20px;
   text-align: center;
-  -webkit-text-size-adjust: 18px;
-     -moz-text-size-adjust: 18px;
-          text-size-adjust: 18px;
-  padding: 0%;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
 }
-.carrito .navproductos .tarjetas1 {
-  background: violet;
-  margin-top: auto;
+.navproductos .row {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
   display: flex;
-  grid-area: tarjeta1;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
-.carrito .navproductos .tarjetas2 {
-  background: blueviolet;
-  display: flex;
-  grid-area: tarjeta2;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding: 1rem;
+.navproductos .col {
+  width: calc(25% - 10px);
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
-.carrito .navproductos .tarjetas3 {
-  background: violet;
+.navproductos .card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 550px;
   display: flex;
-  grid-area: tarjeta3;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  padding: 1rem;
+  flex-direction: column;
 }
-.carrito .navproductos .tarjetas3 .comentario {
+.navproductos .card-img-top {
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+}
+.navproductos .card-body {
+  padding: 1.25rem;
+  text-align: center;
   display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navproductos p.card-text {
+  color: #666;
+}
+@media (max-width: 768px) {
+  .navproductos .col {
+    width: 100%;
+  }
+}
+
+.navproductosbolsitas {
+  background-color: violet;
+}
+.navproductosbolsitas h2 {
+  color: #333;
+  background: rgb(251, 182, 251);
+  background: linear-gradient(90deg, rgb(251, 182, 251) 0%, rgb(255, 255, 255) 50%, rgb(251, 182, 251) 100%);
+  padding: 20px;
+  text-align: center;
+}
+.navproductosbolsitas .row {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.navproductosbolsitas .col {
+  width: calc(25% - 0px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.navproductosbolsitas .card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+.navproductosbolsitas .card-img-top {
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+}
+.navproductosbolsitas .card-body {
+  padding: 1.25rem;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navproductosbolsitas p.card-text {
+  color: #666;
+}
+@media (max-width: 768px) {
+  .navproductosbolsitas .col {
+    width: 100%;
+  }
+}
+
+.navproductos.setjardin {
+  background-color: violet;
+}
+.navproductos.setjardin .h2 {
+  color: #333;
+  background: #b3d9cc;
+  padding: 20px;
 }
 
 .condiciones {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-.condiciones .col-md-6 {
-  flex: 1;
-  max-width: 100%;
-  max-width: 480px;
-}
-
-.galeriafotos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-bottom: 20px;
-  gap: 1;
-  padding: 2rem;
-  /* .galeria1{
-     display: flex;
-
-     justify-content: center;
-     margin-bottom: 20px;
-     flex-direction: row;
-   }
-
-   .galeria2{
-     display: flex;
-
-     justify-content: space-between;
-     margin-bottom: 20px;
-      flex-direction: row;
-   }
-
-   .galeria3{
-     display: flex;
-
-     justify-content:space-between;
-     margin-bottom: 20px;
-     flex-direction: row;
-   }*/
-}
-
-.row {
-  display: grid;
-  flex-direction: row;
-  align-items: center;
-  padding: 3rem;
-  gap: 3rem;
-  margin-left: 15px;
-  overflow: visible;
-  grid-template-columns: 5fr;
-  grid-auto-rows: 1fr;
-  grid-template-areas: "icon1 icon2 icon3 icon4 incon5";
-}
-
-.iconitos {
   display: flex;
-  flex-direction: row;
-  flex-direction: column;
-  /*align-items: center;*/
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; /* Centra verticalmente el contenido de la sección */
+  text-align: center; /* Centra horizontalmente el contenido de la sección */
+}
+.condiciones h2 {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
   text-align: center;
-  /*padding-block: 1rem;*/
-  padding: 3rem;
-  justify-content: center;
+  background: linear-gradient(90deg, rgb(251, 182, 251) 0%, rgb(255, 255, 255) 50%, rgb(251, 182, 251) 100%);
 }
-.iconitos .icon1 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 0 auto; /* Centrar los íconos */
+.condiciones p {
+  text-align: justify;
+  font-size: 25px; /* Ajusta el tamaño de la letra según tus preferencias */
+  margin: 0 auto;
+  max-height: 5em; /* Establece la altura máxima en 3 líneas */
+  overflow: hidden; /* Oculta el texto adicional que no cabe en las 3 líneas */
+  line-height: 1em; /* Ajusta el espacio entre líneas para un mejor aspecto */
+  width: auto;
 }
-.iconitos .icon2 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 0 auto; /* Centrar los íconos */
+@media (max-width: 768px) {
+  .condiciones p {
+    max-width: 100%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+  }
 }
-.iconitos .icon3 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 0 auto; /* Centrar los íconos */
+
+/* Estilo de la sección "galeriafotos" */
+.galeriafotos {
+  gap: 20px;
+  padding: 20px;
 }
-.iconitos .icon4 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
+.galeriafotos .galeria {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 0 auto; /* Centrar los íconos */
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.iconitos .icon5 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
+.galeriafotos img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.galeriafotos img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .galeria img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .condiciones,
+  .galeriafotos {
+    padding: 10px;
+  }
+  .col {
+    width: 100%;
+  }
+  .galeria img {
+    width: 100%;
+  }
+}
+.historia {
+  padding: 2rem;
   align-items: center;
-  border-radius: 50%;
-  margin: 0 auto; /* Centrar los íconos */
+}
+
+.galeria {
+  padding: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
 }
 
 .ubicacion {
   background: rgb(247, 208, 247);
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  padding: 2rem;
 }
-.ubicacion .rowmapa {
-  width: 100%;
-  flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-areas: "mapa formulario";
-  gap: 3rem;
-  justify-content: center;
-  align-items: center;
-}
-.ubicacion .rowmapa .mapa,
-.ubicacion .rowmapa .formulario {
+.ubicacion .mapa,
+.ubicacion .formulario {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-  padding: 10% 0;
-  grid-area: mapa;
-  grid-area: formulario;
+  gap: 2rem;
+  padding: 5% 0;
 }
-.ubicacion .rowmapa .btn {
-  justify-content: center;
+@media (min-width: 768px) {
+  .ubicacion .mapa,
+  .ubicacion .formulario {
+    flex: 1;
+  }
+}
+.ubicacion .btn {
   border: #fdb9fd;
   border-radius: 15%;
   background-color: #fdb9fd;
@@ -444,89 +476,65 @@ p {
   padding: 1rem;
   margin-left: 15px;
 }
+@media (max-width: 768px) {
+  .ubicacion .mapa,
+  .ubicacion .formulario,
+  .ubicacion .rowmapa {
+    padding: 1rem;
+  }
+}
 .ubicacion .row {
   display: flex;
   align-items: center;
-  padding: 3rem;
-  gap: 3rem;
+  padding: 1rem;
+  gap: 1rem;
   margin-left: 15px;
   overflow: visible;
+}
+@media (max-width: 768px) {
+  .ubicacion .row {
+    flex-direction: column;
+    align-self: stretch;
+  }
 }
 .ubicacion .iconitos {
   background: #fbd7fb;
   display: flex;
-  flex-direction: row;
   flex-direction: column;
   text-align: center;
-  padding: 3rem;
-  flex-wrap: wrap;
+  padding: 2rem;
   justify-content: space-around;
   white-space: nowrap;
-  display: grid;
-  grid-template-columns: 5fr;
-  grid-auto-rows: 1fr;
-  grid-template-areas: "icon1 icon2 icon3 icon4 incon5";
+  max-width: 100%;
 }
-.ubicacion .iconitos .icon1 {
+.ubicacion .iconitos .row {
+  flex-wrap: wrap;
+}
+.ubicacion .iconitos .icon-container {
   background-color: #fdb9fd;
   width: 3rem;
   height: 3rem;
   display: flex;
-  grid-area: icon1;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 0 auto; /* Centrar los íconos */
-}
-.ubicacion .iconitos .icon2 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  grid-area: icon2;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 0 auto; /* Centrar los íconos */
-}
-.ubicacion .iconitos .icon3 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  grid-area: icon3;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 0 auto; /* Centrar los íconos */
-}
-.ubicacion .iconitos .icon4 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  grid-area: icon4;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-.ubicacion .iconitos .icon5 {
-  background-color: #fdb9fd;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  grid-area: icon5;
   justify-content: center;
   align-content: center;
   align-items: center;
   border-radius: 50%;
   margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.ubicacion .iconitos .icon-container i {
+  font-size: 1.5rem;
 }
 .ubicacion .foto {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.foto img {
+  max-width: 70%;
+  height: auto;
 }
 
 footer {
@@ -562,9 +570,9 @@ footer {
     grid-auto-rows: 1fr;
     grid-template-areas: "tarjeta1" "tarjeta2" "tarjeta3";
   }
-  .rowmapa {
+  .direccion {
     overflow: hidden;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     grid-template-areas: "mapa" "formulario";
   }
@@ -580,7 +588,7 @@ footer {
     grid-auto-rows: repeat(2, 1fr);
     grid-template-areas: "hero" "imagequienes";
   }
-  .col-12 col-md-6 {
+  .col-12 col-md-5 {
     max-width: 100%;
   }
 }/*# sourceMappingURL=estilos.css.map */

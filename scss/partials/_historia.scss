@@ -1,0 +1,22 @@
+.historia {
+    padding: 2rem;
+    align-items: center;
+}
+
+.galeria{
+    padding: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+img {
+    width: 100%;
+    max-width: 400px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }

@@ -1,55 +1,88 @@
 .condiciones {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   display: flex;
-  text-align:center;
-  justify-content: center;
-  align-items: center;
-  padding:2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; /* Centra verticalmente el contenido de la sección */
+  text-align: center; /* Centra horizontalmente el contenido de la sección */
 
-  
-
-  .col-md-6 {
-    flex: 1;
-    max-width: 100%;
-    max-width: 480px;
+  h2 {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: linear-gradient(
+      90deg,
+      rgba(251, 182, 251, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(251, 182, 251, 1) 100%
+    );
   }
 
-
+  p {
+    text-align: justify;
+    font-size: 25px; /* Ajusta el tamaño de la letra según tus preferencias */
+    margin: 0 auto;
+    max-height: 5em; /* Establece la altura máxima en 3 líneas */
+    overflow: hidden; /* Oculta el texto adicional que no cabe en las 3 líneas */
+    line-height: 1em; /* Ajusta el espacio entre líneas para un mejor aspecto */
+    width: auto;
+  }
+  @media (max-width: 768px) {
+    p {
+      max-width: 100%; /* Ajusta el ancho máximo para pantallas más pequeñas */
+    }
 }
+}
+/* Estilo de la sección "galeriafotos" */
 .galeriafotos {
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
- margin-bottom: 20px;
-  gap: 1;
-  padding: 2rem;
- 
+  gap: 20px;
+  padding: 20px;
 
- /* .galeria1{
+  .galeria {
     display: flex;
-
-    justify-content: center;
-    margin-bottom: 20px;
-    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
-  .galeria2{
-    display: flex;
- 
-    justify-content: space-between;
-    margin-bottom: 20px;
-     flex-direction: row;
-  }
-  
-  .galeria3{
-    display: flex;
-  
-    justify-content:space-between;
-    margin-bottom: 20px;
-    flex-direction: row;
-  }*/
-  
-  
+  img {
+    width: 100%;
+    max-width: 400px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .galeria img {
+    max-width: 100%; 
+  }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .condiciones,
+  .galeriafotos {
+    padding: 10px;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .galeria img {
+    width:100%;
+}
 }
