@@ -119,6 +119,7 @@ p {
   border: 3px solid #ddd;
   text-align: center;
   padding: 1rem;
+  border-radius: 50%;
 }
 .contenedor .hijo img {
   width: 100%;
@@ -128,7 +129,6 @@ p {
 }
 .contenedor .logo {
   display: flex;
-  width: 100%;
   background-color: blueviolet;
   grid-area: logo;
   width: 100%;
@@ -137,12 +137,14 @@ p {
   justify-content: center;
   overflow: hidden;
   background-image: linear-gradient(to top, violet, blueviolet);
+  border-radius: 50%;
 }
 .contenedor .logo img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 100%;
 }
 .contenedor .quienes {
   display: flex;
@@ -151,6 +153,7 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  border-radius: 50%;
 }
 .contenedor .productos {
   background-color: rgb(196, 150, 239);
@@ -158,6 +161,7 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  border-radius: 50%;
 }
 .contenedor .presupuestos {
   background-color: rgb(196, 138, 251);
@@ -165,6 +169,7 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  border-radius: 50%;
 }
 .contenedor .contactanos {
   background-color: rgb(159, 112, 203);
@@ -172,6 +177,7 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  border-radius: 50%;
 }
 
 @keyframes agrandarse {
